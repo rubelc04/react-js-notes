@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+  <header> 
+          <h1 class="text-center text-light bg-dark p-4">React Personal Note</h1>
+  </header>
+    <div class="container bg-light">
+        <div class="row">
+          <div class="col-md-9">
+
+<!-- card start -->
+<div class="card m-3">
+  <div class="card-body">
+    <h5 class="card-title">Functional Component</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This a Functional component</h6>
+<!-- code snippet -->
+  <pre><code class="language-javascript">
+  import React from 'react'
+
+  function App() {
+    return(
+        <h1>Hello World!</h1>
+    )
+  }
+   </code></pre>
+  </div>
+</div><!-- card end -->
+
+<!-- card start -->
+<div class="card m-3">
+  <div class="card-body">
+    <h5 class="card-title">Arrow Function</h5>
+    <h6 class="card-subtitle mb-2 text-muted">This a Functional component</h6>
+<!-- code snippet -->
+  <pre><code class="language-javascript">
+  import React from 'react'
+
+  const App = () => {
+        return(
+          <h1>This a Arrow function</h1>
+        )
+  }
+   </code></pre>
+  </div>
+</div><!-- card end -->
+
+<!-- card start -->
+<div class="card m-3">
+  <div class="card-body">
+    <h5 class="card-title">Class Component</h5>
+    <h6 class="card-subtitle mb-2 text-muted">এটি একটি ক্লাস কম্পোনেন্ট  </h6>
+<!-- code snippet -->
+  <pre><code class="language-javascript">
+  import React, {Component} from 'react'
+
+  class App extends Component {
+    constructor(){
+    super()
+    this.state = {object}
+  }
+  render(){
+  return(
+    <h1>This is a Class Component with state</h1>
+      )
+    }
+  }
+   </code></pre>
+  </div>
+</div><!-- card end -->
+
+<!-- card start -->
+<div class="card m-3">
+  <div class="card-body">
+    <h5 class="card-title">Forec Update</h5>
+    <h6 class="card-subtitle mb-2 text-muted">forceUpdate() method update react component manually</h6>
+<!-- code snippet -->
+<pre><code class="language-javascript">
+  import React, {Component} from 'react'
+  class Refresh extends Component {
+      constructor(){
+          super()
+         this.freshNow = this.freshNow.bind(this)
+      }
+     freshNow = () => {
+         this.forceUpdate()
+     }    
+      render(){
+          return(
+              &lt;div&gt;
+                  &lt;h2&gt; { Math.random() } &lt;/h2&gt;
+                  &lt;button onClick={this.freshNow} className="btn btn-warning" &gt;Refresh &lt;/button&gt;
+              &lt;/div&gt;
+          )
+      }
+  }
+  export default Refresh;
+ </code></pre>
+  </div>
+</div><!-- card end -->
+
+<!-- card start -->
+<div class="card m-3">
+    <div class="card-body">
+      <h5 class="card-title">React DOM</h5>
+      <h6 class="card-subtitle mb-2 text-muted">React Have 5 Dom method</h6>
+<!-- code snippet -->
+<pre><code class="language-javascript">
+  render()
+  hydrate()
+  unmountComponetAtNode()
+  findDOMNode()
+  createPortal()
+  </code></pre>
+    </div>
+  </div><!-- card end -->
+
+          </div><!-- col-md-9 -->
+          <div class="col-md-3">col-md-3</div><!-- col-md-3 -->
+        </div><!-- row -->
+    </div><!-- container -->
+</body>
+</html>
+
